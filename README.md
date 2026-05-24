@@ -340,6 +340,6 @@ Developed and deployed an AI-powered Data Analytics Agent that automated ETL wor
 
 Aspiring Data Analyst | Business Intelligence Enthusiast | AI & Data Analytics
 
-LinkedIn: https://www.linkedin.com/in/anmol-janmejay/
+LinkedIn: [https://www.linkedin.com/in/anmol-janmejay/](https://www.linkedin.com/in/anmol-janmejayyy/)
 
 GitHub: https://github.com/anmol-janmejay
