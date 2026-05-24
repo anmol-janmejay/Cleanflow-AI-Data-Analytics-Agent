@@ -2,8 +2,8 @@
 
 🎥 Demo Video: [https://youtu.be/eusLKrHddEo](https://youtu.be/eusLKrHddEo)
 
-📂 GitHub Repository: https://github.com/anmol-janmejay/CleanFlow
-
+📂 GitHub Repository: [https://github.com/anmol-janmejay/CleanFlow
+](https://github.com/anmol-janmejay?tab=repositories)
 ---
 
 ## Overview
