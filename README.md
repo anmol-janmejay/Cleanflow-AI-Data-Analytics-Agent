@@ -20,7 +20,9 @@ The application is designed for Data Analysts, Business Analysts, students, and 
 
 Watch the project in action:
 
-[![Watch Demo]([https://img.youtube.com/vi/eusLKrHddEo/maxresdefault.jpg)](https://youtu.be/eusLKrHddEo](https://youtu.be/eusLKrHddEo))
+## 🎥 Demo Video
+
+[![Watch Demo](imagesdemo-thumbnail.jpg)](https://youtu.be/eusLKrHddEo)
 
 ---
 
