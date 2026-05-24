@@ -1,40 +1,165 @@
 # CleanFlow: AI-Powered Data Analytics Agent
 
-CleanFlow is an end-to-end data analytics application built with Python and Streamlit. It helps users upload datasets, clean and transform data, store it in a local database, ask natural-language questions, generate SQL-based insights, create interactive visualizations, and export profiling reports.
+🎥 Demo Video: [https://youtu.be/eusLKrHddEo](https://youtu.be/eusLKrHddEo)
 
-## Repository Description
+📂 GitHub Repository: https://github.com/anmol-janmejay/CleanFlow
 
-AI-powered Streamlit data analytics agent for automated data cleaning, SQL querying, visualization, profiling, and dataset versioning.
+---
 
 ## Overview
 
-Data analysis often requires repetitive steps such as uploading files, checking data quality, cleaning missing values, removing duplicates, writing SQL queries, building charts, and generating reports. CleanFlow combines these steps into one interactive workflow.
+CleanFlow is an AI-powered Data Analytics Agent that automates the complete analytics workflow from data ingestion and cleaning to SQL querying, visualization, profiling, and reporting.
 
-The app is designed for analysts, students, and data enthusiasts who want a simple tool to explore datasets quickly without manually writing every cleaning or analysis step.
+Built using Python, Streamlit, SQLAlchemy, and Hugging Face APIs, the platform enables users to upload datasets, clean and transform data, generate insights using natural language, create interactive dashboards, and export analytical reports without writing extensive code.
 
-## Key Features
+The application is designed for Data Analysts, Business Analysts, students, and decision-makers who need rapid insights from structured datasets.
 
-- Upload CSV and XLSX datasets.
-- Load data from APIs or database connections.
-- Automatically assess missing values, duplicates, type issues, and memory usage.
-- Clean missing values, duplicate rows, whitespace, dates, data types, and outliers.
-- Save cleaned dataset snapshots with metadata and hashes.
-- Store cleaned data in a SQLite database using SQLAlchemy.
-- Ask natural-language questions and generate SQL queries.
-- Run custom SQL queries directly.
-- Create interactive Plotly visualizations.
-- Generate data profiling reports using ydata-profiling.
-- Export cleaned data and HTML reports.
-- Deploy easily on Streamlit Community Cloud.
+---
 
-## Tech Stack
+## Demo Video
+
+Watch the project in action:
+
+[![Watch Demo]([https://img.youtube.com/vi/eusLKrHddEo/maxresdefault.jpg)](https://youtu.be/eusLKrHddEo](https://youtu.be/eusLKrHddEo))
+
+---
+
+## Key Highlights
+
+- Automated data quality assessment and cleaning workflows
+- Natural Language to SQL query generation
+- Interactive business intelligence dashboards
+- Dataset versioning and snapshot management
+- SQLite-powered analytics engine
+- Automated profiling and reporting
+- API and database data ingestion support
+- Cloud deployment using Streamlit
+
+---
+
+## Business Problem
+
+Data analysis often requires multiple disconnected tools for:
+
+- Data ingestion
+- Cleaning and preprocessing
+- SQL analysis
+- Dashboard creation
+- Profiling and reporting
+
+CleanFlow consolidates these tasks into a single AI-powered analytics platform, reducing manual effort and accelerating insight generation.
+
+---
+
+## Core Features
+
+### Data Ingestion
+
+- Upload CSV files
+- Upload Excel files
+- Load data from APIs
+- Connect to databases
+
+### Data Quality Assessment
+
+Automatically detects:
+
+- Missing values
+- Duplicate records
+- Data type inconsistencies
+- Memory inefficiencies
+- Potential outliers
+
+### Automated Data Cleaning
+
+Supports:
+
+- Missing value handling
+- Duplicate removal
+- Date formatting
+- Data type conversion
+- Whitespace cleanup
+- Outlier treatment
+
+### Natural Language Analytics
+
+Users can ask:
+
+```text
+What is the average salary?
+Show top performing departments.
+Which region generated highest revenue?
+```
+
+The system automatically generates and executes SQL queries.
+
+### Interactive Visualization
+
+Generate:
+
+- Bar Charts
+- Pie Charts
+- Histograms
+- Scatter Plots
+- Trend Analysis Visualizations
+
+using Plotly.
+
+### Data Profiling
+
+Generate automated profiling reports containing:
+
+- Dataset overview
+- Missing value analysis
+- Correlation analysis
+- Statistical summaries
+- Distribution insights
+
+### Dataset Versioning
+
+- Snapshot management
+- Hash-based dataset tracking
+- Metadata storage
+- Version history support
+
+---
+
+## System Architecture
+
+```text
+Dataset Upload
+        │
+        ▼
+Data Quality Assessment
+        │
+        ▼
+Automated Cleaning Engine
+        │
+        ▼
+Version Snapshot Storage
+        │
+        ▼
+SQLite Database
+        │
+ ┌──────┼──────┐
+ ▼      ▼      ▼
+AI SQL  Charts Profiling
+Engine         Report
+ │
+ ▼
+Business Insights
+```
+
+---
+
+## Technology Stack
 
 | Category | Technologies |
-| --- | --- |
-| Programming Language | Python |
-| Web Framework | Streamlit |
+|----------|-------------|
+| Language | Python |
+| Frontend | Streamlit |
 | Data Processing | Pandas, NumPy |
-| Machine Learning Utility | scikit-learn |
+| Machine Learning Utilities | Scikit-Learn |
 | Database | SQLite, SQLAlchemy |
 | Visualization | Plotly |
 | Profiling | ydata-profiling |
@@ -42,189 +167,177 @@ The app is designed for analysts, students, and data enthusiasts who want a simp
 | Deployment | Streamlit Community Cloud |
 | Version Control | Git, GitHub |
 
+---
+
+## Skills Demonstrated
+
+### Data Analytics
+
+- Data Cleaning
+- Data Wrangling
+- Exploratory Data Analysis (EDA)
+- Statistical Analysis
+- Data Profiling
+- Business Intelligence
+
+### Data Engineering
+
+- ETL Pipelines
+- Data Transformation
+- Data Validation
+- SQLite Database Design
+- SQL Querying
+
+### AI & Automation
+
+- Natural Language Query Processing
+- AI-Assisted SQL Generation
+- Hugging Face API Integration
+- Workflow Automation
+
+### Tools & Technologies
+
+- Python
+- Streamlit
+- Pandas
+- NumPy
+- Plotly
+- SQLAlchemy
+- SQLite
+- Git
+- GitHub
+
+---
+
 ## Project Workflow
 
 ```text
 Upload Dataset
--> Clean and Validate Data
--> Save Version Snapshot
--> Store Data in SQLite
--> Ask Natural-Language Questions
--> Run SQL Queries
--> Generate Visualizations
--> Create Profiling Report
--> Export Results
+      ↓
+Validate Dataset
+      ↓
+Clean & Transform Data
+      ↓
+Store in SQLite
+      ↓
+Generate Insights
+      ↓
+Run SQL Queries
+      ↓
+Create Visualizations
+      ↓
+Generate Profiling Reports
+      ↓
+Export Results
 ```
 
-## Project Structure
+---
+
+## Sample Natural Language Queries
 
 ```text
-Data-Analytics-AI-Agent/
-├── app.py
-├── modules/
-│   ├── ai_services.py
-│   ├── data_cleaning.py
-│   ├── data_ingestion.py
-│   ├── database_manager.py
-│   ├── profiling.py
-│   ├── version_control.py
-│   └── visualization.py
-├── utils/
-│   └── helpers.py
-├── .streamlit/
-│   ├── config.toml
-│   └── secrets.toml.example
-├── DEPLOYMENT.md
-├── requirements.txt
-└── README.md
+Count rows in the dataset
 ```
+
+```text
+What is the average salary?
+```
+
+```text
+Which department has the highest salary?
+```
+
+```text
+Show revenue by city
+```
+
+```text
+Find top performing employees
+```
+
+---
+
+## Example SQL Query
+
+```sql
+SELECT department,
+AVG(salary) AS average_salary
+FROM data_table
+GROUP BY department
+ORDER BY average_salary DESC;
+```
+
+---
+
+## Results & Impact
+
+- Automated repetitive data preparation tasks
+- Reduced manual cleaning effort through workflow automation
+- Enabled SQL analysis using natural language queries
+- Accelerated exploratory analysis through interactive dashboards
+- Simplified report generation using automated profiling
+
+---
 
 ## Installation
 
-Clone the repository:
+### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/cleanflow-ai-data-analytics-agent.git
-cd cleanflow-ai-data-analytics-agent
+git clone https://github.com/anmol-janmejay/CleanFlow.git
+cd CleanFlow
 ```
 
-Create a virtual environment:
+### Create Virtual Environment
 
 ```bash
 python -m venv .venv
 ```
 
-Activate the virtual environment on Windows:
+### Activate Environment
+
+Windows:
 
 ```bash
 .venv\Scripts\activate
 ```
 
-Install dependencies:
+### Install Dependencies
 
 ```bash
-python -m pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
-If `pkg_resources` is missing, run:
+### Run Application
 
 ```bash
-python -m pip install "setuptools>=68,<81" --force-reinstall
+streamlit run app.py
 ```
 
-## Run Locally
+---
 
-```bash
-python -m streamlit run app.py
-```
+## Future Improvements
 
-Then open:
+- LLM-powered insight explanations
+- Predictive analytics modules
+- Dashboard sharing capabilities
+- Multi-user authentication
+- Cloud database integration
 
-```text
-http://localhost:8501
-```
+---
 
-## Optional AI Setup
+## Resume Description
 
-The app works without an API key by using rule-based fallbacks. To enable Hugging Face-powered SQL and insight generation, create this file:
+Developed and deployed an AI-powered Data Analytics Agent that automated ETL workflows, dataset cleaning, SQL-based insight generation, visualization, profiling, and version-controlled data management using Python, Streamlit, SQLite, and Hugging Face APIs.
 
-```text
-.streamlit/secrets.toml
-```
-
-Add:
-
-```toml
-HF_API_KEY = "your_huggingface_token_here"
-```
-
-## Sample Questions
-
-Use these prompts in the Storage & Queries section:
-
-```text
-count rows
-```
-
-```text
-what is the average salary
-```
-
-```text
-what is the maximum salary
-```
-
-Example custom SQL:
-
-```sql
-SELECT department, AVG(salary) AS avg_salary
-FROM data_table
-GROUP BY department
-ORDER BY avg_salary DESC;
-```
-
-## Visualization Examples
-
-Use these prompts in the Visualization section:
-
-```text
-show salary by department
-```
-
-```text
-show monthly_sales by city
-```
-
-```text
-show distribution of performance_score
-```
-
-```text
-show relationship between training_hours and performance_score
-```
-
-## Deployment
-
-This project can be deployed on Streamlit Community Cloud.
-
-1. Push the repository to GitHub.
-2. Go to Streamlit Community Cloud.
-3. Create a new app.
-4. Select this repository.
-5. Set the main file path to:
-
-```text
-app.py
-```
-
-6. Add optional secrets such as `HF_API_KEY`.
-7. Deploy the app.
-
-For more details, see [DEPLOYMENT.md](DEPLOYMENT.md).
-
-## Skills Demonstrated
-
-- Python programming
-- Data cleaning and preprocessing
-- ETL workflow automation
-- Exploratory data analysis
-- SQL querying
-- Natural-language query handling
-- Interactive dashboard development
-- Data visualization
-- Data profiling and reporting
-- Streamlit app development
-- Cloud deployment
-- Git and GitHub project management
-
-## Resume Highlight
-
-Built and deployed CleanFlow, an AI-powered Streamlit data analytics agent that automates data ingestion, ETL cleaning, SQLite storage, natural-language SQL querying, Plotly visualization, profiling report generation, and version-controlled dataset snapshots.
+---
 
 ## Author
 
-Anmol Janmejay  
-Aspiring Data Analyst | AI-ML Engineer
+### Anmol Janmejay
 
+Aspiring Data Analyst | Business Intelligence Enthusiast | AI & Data Analytics
 
+LinkedIn: https://www.linkedin.com/in/anmol-janmejay/
 
+GitHub: https://github.com/anmol-janmejay
